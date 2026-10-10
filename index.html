@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشار تقني شامل - مشروعك الذكي</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- خط عربي أنيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>💡 المستشار التقني الشامل</h1>
+            <p>أداتك الذكية لتوليد أفكار المشاريع، تقدير نطاق العمل، وتتبع المهام بكفاءة.</p>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- القسم الأول: مولد الأفكار -->
+        <section class="card">
+            <h2>🚀 مولد أفكار المشاريع</h2>
+            <div class="form-group">
+                <label for="domainSelect">اختر المجال التقني:</label>
+                <select id="domainSelect">
+                    <option value="web">تطوير الويب ومنصات التجارة</option>
+                    <option value="tracking">أنظمة التتبع والنقل الذكي</option>
+                    <option value="management">أنظمة الإدارة وقواعد البيانات</option>
+                    <option value="tourism">أنظمة إدارة السياحة والفرق</option>
+                </select>
+                <button id="generateBtn" class="btn">احصل على فكرة مشروع</button>
+            </div>
+            <div id="ideaResult" class="result-box hidden"></div>
+        </section>
+
+        <!-- القسم الثاني: حاسبة نطاق المشروع -->
+        <section class="card">
+            <h2>📊 حاسبة نطاق المشروع</h2>
+            <div class="form-group">
+                <label>نوع النظام:</label>
+                <select id="systemType">
+                    <option value="small">تطبيق مصغر / صفحة واحدة (20 نقطة تعقيد)</option>
+                    <option value="medium">نظام إداري متعدد الواجهات (50 نقطة تعقيد)</option>
+                    <option value="large">منصة متكاملة مع تتبع وقواعد بيانات (90 نقطة تعقيد)</option>
+                </select>
+                <button id="calcBtn" class="btn">احسب التقديرات</button>
+            </div>
+            <div id="calcResult" class="result-box hidden"></div>
+        </section>
+
+        <!-- القسم الثالث: متتبع مهام المشروع -->
+        <section class="card">
+            <h2>📝 مهام تطوير المشروع</h2>
+            <div class="task-input-group">
+                <input type="text" id="taskInput" placeholder="أدخل مهمة جديدة (مثلاً: تصميم قاعدة البيانات)...">
+                <button id="addTaskBtn" class="btn">إضافة مهمة</button>
+            </div>
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة © 2026 | أُنشئ بواسطة المستشار التقني</p>
+    </footer>
+
+    <script src="style.js" src="script.js"></script> <!-- ملاحظة: سنستخدم script.js بالأسفل -->
+    <script src="script.js"></script>
+</body>
+</html>
