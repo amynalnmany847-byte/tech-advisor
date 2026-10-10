@@ -1,0 +1,168 @@
+:root {
+    --bg-color: #0d1b2a;       /* كحلي داكن */
+    --card-bg: #1b263b;        /* كحلي مائل للرمادي الداكن */
+    --accent-color: #415a77;   /* رمادي كحلي متوسط */
+    --text-color: #e0e1dd;     /* رمادي فاتح جداً وواضح */
+    --highlight: #778da9;      /* رمادي أزرق جذاب */
+    --btn-hover: #48cae4;      /* لون تفاعلي عند المرور */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--card-bg);
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.header p {
+    color: var(--highlight);
+    font-size: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--accent-color);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--highlight);
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+}
+
+select, input[type="text"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+}
+
+select:focus, input[type="text"]:focus {
+    border-color: var(--btn-hover);
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--bg-color);
+}
+
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    border-right: 4px solid var(--btn-hover);
+}
+
+.hidden {
+    display: none;
+}
+
+.task-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.task-input-group input {
+    flex: 1;
+}
+
+.task-list {
+    list-style: none;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid var(--accent-color);
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: var(--highlight);
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--highlight);
+    font-size: 0.9rem;
+}
